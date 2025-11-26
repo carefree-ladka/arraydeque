@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * A high-performance Deque (Double-Ended Queue) implementation.
  * Supports Stack, Queue, and Deque operations with O(1) time complexity.
@@ -398,4 +396,4 @@ class Deque {
         return newDeque;
     }
 }
-exports.default = Deque;
+export default Deque;

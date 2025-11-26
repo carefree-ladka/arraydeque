@@ -13,13 +13,13 @@ A high-performance Deque (Double-Ended Queue) implementation in TypeScript, opti
 ## Installation
 
 ```bash
-npm install @js-dsa/arraydeque
+npm install algojs-deque
 ```
 
 ## Quick Start
 
 ```typescript
-import { Deque } from '@js-dsa/arraydeque';
+import { Deque } from 'algojs-deque';
 
 const deque = new Deque<number>();
 
