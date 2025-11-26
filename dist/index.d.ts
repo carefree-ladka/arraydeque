@@ -1,3 +1,3 @@
-export { default as Deque } from "./Deque";
-export { default as PriorityQueue } from "./PriorityQueue";
-export type { Comparator, HeapType, PriorityQueueOptions } from "./PriorityQueue";
+export { Deque } from "./Deque.js";
+export { PriorityQueue } from "./PriorityQueue.js";
+export type { Comparator, HeapType, PriorityQueueOptions } from "./PriorityQueue.js";

@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.PriorityQueue = void 0;
 /**
  * PriorityQueue implementation using binary heap
  * Supports both min-heap and max-heap configurations
@@ -21,7 +18,7 @@ exports.PriorityQueue = void 0;
  *   comparator: (a, b) => a.priority - b.priority
  * });
  */
-class PriorityQueue {
+export class PriorityQueue {
     /**
      * Creates a new PriorityQueue
      *
@@ -331,6 +328,5 @@ class PriorityQueue {
         return 2 * index + 2;
     }
 }
-exports.PriorityQueue = PriorityQueue;
 // Export default for convenience
-exports.default = PriorityQueue;
+export default PriorityQueue;
