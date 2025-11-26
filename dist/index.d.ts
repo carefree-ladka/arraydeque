@@ -278,3 +278,4 @@ declare class Deque<T> {
     clone(): Deque<T>;
 }
 export default Deque;
+export { Deque };
