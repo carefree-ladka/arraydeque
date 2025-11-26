@@ -1,9 +1,9 @@
-A high-performance Deque (Double-Ended Queue) implementation in TypeScript, optimized for Data Structures and Algorithms practice. All operations are O(1) time complexity (amortized).
+A high-performance ArrayDeque (Double-Ended Queue) implementation in TypeScript, optimized for Data Structures and Algorithms practice. All operations are O(1) time complexity (amortized).
 
 ## Features
 
 - ✅ **O(1) Operations**: All main operations run in constant time (amortized)
-- ✅ **Versatile**: Use as Stack, Queue, or Deque
+- ✅ **Versatile**: Use as Stack, Queue, or ArrayDeque
 - ✅ **Type-Safe**: Full TypeScript support with generics
 - ✅ **Memory Efficient**: Circular buffer with dynamic growth
 - ✅ **Well-Documented**: JSDoc with time/space complexity annotations
@@ -13,15 +13,15 @@ A high-performance Deque (Double-Ended Queue) implementation in TypeScript, opti
 ## Installation
 
 ```bash
-npm install @dsa-practice/deque
+npm install arraydeque
 ```
 
 ## Quick Start
 
 ```typescript
-import { Deque } from '@dsa-practice/deque';
+import { ArrayDeque } from 'arraydeque';
 
-const deque = new Deque<number>();
+const deque = new ArrayDeque<number>();
 
 // Use as Stack (LIFO)
 deque.push(1);
@@ -33,7 +33,7 @@ deque.enqueue(1);
 deque.enqueue(2);
 console.log(deque.dequeue()); // 1
 
-// Use as Deque
+// Use as ArrayDeque
 deque.pushFront(1);
 deque.pushBack(2);
 console.log(deque.popFront()); // 1
@@ -45,7 +45,7 @@ console.log(deque.popBack()); // 2
 ### Constructor
 
 ```typescript
-new Deque<T>(initialCapacity?: number)
+new ArrayDeque<T>(initialCapacity?: number)
 ```
 
 Creates a new deque with optional initial capacity (default: 16).
@@ -74,7 +74,7 @@ Creates a new deque with optional initial capacity (default: 16).
 | `front()` | View front element | O(1) |
 | `back()` | View back element | O(1) |
 
-### Deque Operations
+### ArrayDeque Operations
 
 | Method | Description | Time |
 |--------|-------------|------|
@@ -109,7 +109,7 @@ Creates a new deque with optional initial capacity (default: 16).
 
 ```typescript
 const bfs = (graph: Map<string, string[]>, start: string) => {
-  const deque = new Deque<string>();
+  const deque = new ArrayDeque<string>();
   const visited = new Set<string>();
 
   deque.enqueue(start);
@@ -133,7 +133,7 @@ const bfs = (graph: Map<string, string[]>, start: string) => {
 
 ```typescript
 const bfs01 = (graph: [number, number][][], start: number) => {
-  const deque = new Deque<[number, number]>();
+  const deque = new ArrayDeque<[number, number]>();
   const dist = new Map<number, number>();
 
   deque.pushBack([start, 0]);
@@ -167,7 +167,7 @@ const bfs01 = (graph: [number, number][][], start: number) => {
 
 ```typescript
 const slidingWindowMaximum = (nums: number[], k: number): number[] => {
-  const deque = new Deque<number>(); // Store indices
+  const deque = new ArrayDeque<number>(); // Store indices
   const result: number[] = [];
 
   for (let i = 0; i < nums.length; i++) {
@@ -208,7 +208,7 @@ Unlike JavaScript's built-in array methods:
 - `Array.shift()` is O(n) - our `popFront()` is O(1)
 - `Array.unshift()` is O(n) - our `pushFront()` is O(1)
 
-This makes our Deque significantly faster for algorithms that require frequent front operations, such as BFS, sliding window problems, and 0-1 BFS.
+This makes our ArrayDeque significantly faster for algorithms that require frequent front operations, such as BFS, sliding window problems, and 0-1 BFS.
 
 ## License
 
