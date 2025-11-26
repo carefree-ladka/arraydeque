@@ -4,7 +4,7 @@
   "description": "High-performance Deque (Double-Ended Queue) for DSA practice with O(1) operations",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
+  "type": "module"  ,
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -22,11 +22,11 @@
     "typescript",
     "circular-buffer"
   ],
-  "author": "Your Name",
+  "author": "Pawan Kumar",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/deque"
+    "url": "https://github.com/carefree-ladka/arraydeque"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
