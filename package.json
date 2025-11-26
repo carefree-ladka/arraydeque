@@ -1,6 +1,6 @@
 {
   "name": "algojs-deque",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "High-performance Deque (Double-Ended Queue) for DSA practice with O(1) operations",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
